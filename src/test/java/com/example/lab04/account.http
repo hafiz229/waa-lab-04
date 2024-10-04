@@ -1,0 +1,23 @@
+###
+GET http://localhost:8080/accounts
+Accept: application/json
+
+###
+POST http://localhost:8080/accounts/savings
+Content-Type: application/json
+
+{
+  "number": 1001,
+  "balance": 5000.00,
+  "APY": 1.5
+}
+
+###
+POST http://localhost:8080/accounts/checking
+Content-Type: application/json
+
+{
+  "number": 2001,
+  "balance": 3000.00,
+  "overdraftLimit": 500.00
+}
